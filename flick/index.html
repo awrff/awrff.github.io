@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1b1a18" />
+    <meta
+      name="description"
+      content="Flick is a super tiny, super fast scratchpad that keeps your notes and clipboard in one place. Free for Windows and Linux."
+    />
+    <meta property="og:title" content="Flick — Notes and clipboard. One tiny, fast list." />
+    <meta
+      property="og:description"
+      content="What you write and what you copy, together one hotkey away."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://awrff.github.io/flick/" />
+    <meta property="og:image" content="https://awrff.github.io/flick/assets/flick-icon.png" />
+    <title>Flick — Notes and clipboard, in one place</title>
+    <link rel="icon" type="image/png" href="assets/flick-icon.png" />
+    <link rel="preload" href="assets/manrope-bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.82c.85 0 1.71.12 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="6.5" />
+        <path d="m16 16 4 4" />
+      </symbol>
+      <symbol id="icon-note" viewBox="0 0 24 24">
+        <path d="M6 3.5h9l3 3V20.5H6z" />
+        <path d="M14.5 3.5v4h3.5M9 12h6M9 16h5" />
+      </symbol>
+      <symbol id="icon-clip" viewBox="0 0 24 24">
+        <path d="M9 5.5H6.5v15h11v-15H15" />
+        <rect x="9" y="3.5" width="6" height="4" rx="1" />
+        <path d="M9 12h6M9 16h4" />
+      </symbol>
+      <symbol id="icon-copy" viewBox="0 0 24 24">
+        <rect x="8" y="8" width="11" height="12" rx="2" />
+        <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2" />
+      </symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24">
+        <path d="M12 3v12m-4-4 4 4 4-4M5 20h14" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Flick home">
+        <img src="assets/flick-icon.png" alt="" width="34" height="34" />
+        <span>Flick</span>
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="https://github.com/awrff/flick">
+          <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+          GitHub
+        </a>
+        <a class="nav-download" href="#download">Download</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Notes and clipboard.<br />One tiny, fast list.</h1>
+          <p class="hero-lede">
+            Flick keeps what you write and what you copy in the same place, ready the moment you press a hotkey.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/awrff/flick/releases/tag/v1.0.0">
+              <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+              Download Flick
+            </a>
+            <a class="button button-quiet" href="https://github.com/awrff/flick">View on GitHub</a>
+          </div>
+          <p class="platforms"><span>Windows &amp; Linux</span><span>Version 1.0.0</span></p>
+        </div>
+
+        <div class="hero-demo">
+          <div class="app-window" aria-hidden="true">
+            <div class="window-grip"><span></span><span class="window-close">×</span></div>
+            <div class="app-search">
+              <svg><use href="#icon-search"></use></svg>
+              <span>Search notes</span>
+            </div>
+            <div class="app-toolbar">
+              <div class="source-filters">
+                <span class="active">All</span><span>Notes</span><span>Clip</span>
+              </div>
+              <span class="add-note">+</span>
+            </div>
+            <div class="note-list">
+              <div class="note-row selected">
+                <svg><use href="#icon-note"></use></svg>
+                <span>Release checklist</span>
+                <svg class="row-copy"><use href="#icon-copy"></use></svg>
+              </div>
+              <div class="note-row">
+                <svg><use href="#icon-clip"></use></svg>
+                <span>https://github.com/awrff/flick</span>
+              </div>
+              <div class="note-row">
+                <svg><use href="#icon-note"></use></svg>
+                <span>Ideas for today</span>
+              </div>
+              <div class="note-row">
+                <svg><use href="#icon-clip"></use></svg>
+                <span>Ctrl + Shift + Space</span>
+              </div>
+            </div>
+          </div>
+          <div class="hotkey" aria-label="Open Flick with Control, Shift, Space">
+            <span>Open Flick</span>
+            <div class="keys" aria-hidden="true"><kbd>Ctrl</kbd><b>+</b><kbd>Shift</kbd><b>+</b><kbd>Space</kbd></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" aria-label="Why Flick">
+        <article class="feature">
+          <h2>Super tiny.</h2>
+          <div class="feature-copy">
+            <p class="feature-lead">A 2.2 MB Windows installer.</p>
+            <p>No account. No setup routine. Just a small app that stays out of your way.</p>
+          </div>
+        </article>
+        <article class="feature">
+          <h2>Super fast.</h2>
+          <div class="feature-copy">
+            <p class="feature-lead">One hotkey. Your notes are already there.</p>
+            <p>Open with Ctrl + Shift + Space. Copy what you need, press Escape, and get back to work.</p>
+          </div>
+        </article>
+        <article class="feature">
+          <h2>One list, not two.</h2>
+          <div class="feature-copy">
+            <p class="feature-lead">Your clipboard becomes part of your notes.</p>
+            <p>Copy text while Flick is open and it lands beside everything you wrote. Use All, Notes, or Clip to narrow the list.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="download" id="download" aria-labelledby="download-title">
+        <div>
+          <h2 id="download-title">Small app.<br />Less friction.</h2>
+          <p>Free and open source, for Windows and Linux.</p>
+        </div>
+        <div class="download-actions">
+          <a class="button button-primary" href="https://github.com/awrff/flick/releases/download/v1.0.0/Flick_1.0.0_x64-setup.exe">
+            <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+            Download for Windows
+          </a>
+          <a class="button button-secondary" href="https://github.com/awrff/flick/releases/tag/v1.0.0">Download for Linux</a>
+          <a class="checksum-link" href="https://github.com/awrff/flick/releases/download/v1.0.0/SHA256SUMS">Verify with SHA256SUMS</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Flick 1.0.0</span>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/awrff/flick/releases">Releases</a>
+        <a href="https://github.com/awrff/flick">GitHub</a>
+        <a href="https://github.com/awrff/flick/blob/master/LICENSE">MIT license</a>
+      </nav>
+      <span>Small by design.</span>
+    </footer>
+  </body>
+</html>
