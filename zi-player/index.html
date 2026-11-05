@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2c001e" />
+    <meta
+      name="description"
+      content="把 B 站的视频或合集贴进来，就能听。支持 Windows 和 Linux。"
+    />
+    <meta name="author" content="Jayden Dev" />
+    <meta name="application-name" content="ZI Player" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://awrff.github.io/zi-player/" />
+
+    <meta property="og:title" content="ZI Player — 把 B 站视频收成能听的歌" />
+    <meta
+      property="og:description"
+      content="把 B 站的视频或合集贴进来，就能听。支持 Windows 和 Linux。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://awrff.github.io/zi-player/" />
+    <meta property="og:site_name" content="Jayden Dev" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:image" content="https://awrff.github.io/zi-player/assets/zi-player-social-card.png" />
+    <meta property="og:image:secure_url" content="https://awrff.github.io/zi-player/assets/zi-player-social-card.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="把 B 站的视频或合集贴进来，就能听。" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZI Player — 把 B 站视频收成能听的歌" />
+    <meta
+      name="twitter:description"
+      content="把 B 站的视频或合集贴进来，就能听。支持 Windows 和 Linux。"
+    />
+    <meta name="twitter:image" content="https://awrff.github.io/zi-player/assets/zi-player-social-card.png" />
+    <meta name="twitter:image:alt" content="把 B 站的视频或合集贴进来，就能听。" />
+
+    <title>ZI Player — 把 B 站视频收成能听的歌</title>
+    <link rel="icon" type="image/png" href="assets/zi-player-icon.png" />
+    <link rel="preload" href="assets/manrope-bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://awrff.github.io/#website",
+            "url": "https://awrff.github.io/",
+            "name": "Jayden Dev",
+            "inLanguage": "zh-CN"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://awrff.github.io/zi-player/#webpage",
+            "url": "https://awrff.github.io/zi-player/",
+            "name": "ZI Player — 把 B 站视频收成能听的歌",
+            "description": "把 B 站的视频或合集贴进来，就能听。支持 Windows 和 Linux。",
+            "isPartOf": { "@id": "https://awrff.github.io/#website" },
+            "about": { "@id": "https://awrff.github.io/zi-player/#software" },
+            "breadcrumb": { "@id": "https://awrff.github.io/zi-player/#breadcrumb" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "contentUrl": "https://awrff.github.io/zi-player/assets/zi-player-social-card.png",
+              "width": 1200,
+              "height": 630
+            },
+            "inLanguage": "zh-CN"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://awrff.github.io/zi-player/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Jayden Dev",
+                "item": "https://awrff.github.io/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "ZI Player",
+                "item": "https://awrff.github.io/zi-player/"
+              }
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://awrff.github.io/zi-player/#software",
+            "name": "ZI Player",
+            "url": "https://awrff.github.io/zi-player/",
+            "description": "把 B 站的视频或合集贴进来，就能听。",
+            "applicationCategory": "MultimediaApplication",
+            "operatingSystem": "Windows, Linux",
+            "isAccessibleForFree": true,
+            "inLanguage": "zh-CN",
+            "author": {
+              "@type": "Organization",
+              "name": "Jayden Dev",
+              "url": "https://awrff.github.io/"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://github.com/awrff/zi-player/releases/latest"
+            },
+            "downloadUrl": "https://github.com/awrff/zi-player/releases/latest",
+            "installUrl": "https://github.com/awrff/zi-player/releases/latest",
+            "featureList": [
+              "能导入单个视频、多 P 和合集",
+              "歌单、搜索、网格和列表",
+              "随机播放和循环",
+              "关闭窗口后留在系统托盘",
+              "剪贴板中的 B 站链接提示导入"
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到内容</a>
+
+    <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="6.5" />
+        <path d="m16 16 4 4" />
+      </symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24">
+        <path d="M12 4v11" />
+        <path d="m7 11 5 5 5-5" />
+        <path d="M5 19h14" />
+      </symbol>
+      <symbol id="icon-prev" viewBox="0 0 24 24">
+        <path d="M16 6 8 12l8 6Z" />
+        <path d="M7 6v12" />
+      </symbol>
+      <symbol id="icon-next" viewBox="0 0 24 24">
+        <path d="m8 6 8 6-8 6Z" />
+        <path d="M17 6v12" />
+      </symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24">
+        <path d="M9 7.2v9.6l8-4.8Z" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="ZI Player 首页">
+        <img src="assets/zi-player-icon.png" alt="" width="34" height="34" />
+        <span>ZI Player</span>
+      </a>
+      <nav class="header-nav" aria-label="主导航">
+        <a class="nav-download" href="https://github.com/awrff/zi-player/releases/latest">下载</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">B 站链接，<br />收成能听的歌。</h1>
+          <p class="hero-lede">把 B 站的视频或合集贴进来，就能听。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" data-asset="exe" href="https://github.com/awrff/zi-player/releases/latest">
+              <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+              Windows 安装包
+            </a>
+            <a class="button button-primary" data-asset="deb" href="https://github.com/awrff/zi-player/releases/latest">
+              <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+              Linux .deb
+            </a>
+            <a class="button button-primary" data-asset="appimage" href="https://github.com/awrff/zi-player/releases/latest">
+              <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+              Linux AppImage
+            </a>
+          </div>
+          <p class="platforms"><span>Windows</span><span>Linux</span></p>
+        </div>
+
+        <div class="hero-demo">
+          <div class="app-window" aria-hidden="true">
+            <div class="window-grip"><span></span><span class="window-close">×</span></div>
+            <div class="win-head">
+              <img src="assets/zi-player-icon.png" alt="" width="18" height="18" />
+              <span class="win-search">
+                <svg><use href="#icon-search"></use></svg>
+                搜索歌曲
+              </span>
+              <span class="win-add">+ 添加</span>
+            </div>
+            <div class="win-body">
+              <div class="win-side">
+                <p class="side-label">资料库</p>
+                <div class="side-row active"><span>全部歌曲</span><b>9</b></div>
+                <p class="side-label">歌单</p>
+                <div class="side-row"><span class="mini-disc"></span><span>夜航</span><b>4</b></div>
+              </div>
+              <div class="win-board">
+                <div class="song playing">
+                  <div class="cover cover-a"><span class="vinyl"></span></div>
+                  <p>夜航</p>
+                  <small>3:28</small>
+                </div>
+                <div class="song">
+                  <div class="cover cover-b"><span class="vinyl"></span></div>
+                  <p>回声</p>
+                  <small>4:02</small>
+                </div>
+                <div class="song">
+                  <div class="cover cover-c"><span class="vinyl"></span></div>
+                  <p>晴日</p>
+                  <small>2:51</small>
+                </div>
+                <div class="song">
+                  <div class="cover cover-d"><span class="vinyl"></span></div>
+                  <p>慢板</p>
+                  <small>5:11</small>
+                </div>
+              </div>
+            </div>
+            <div class="win-player">
+              <div class="player-meta">
+                <span class="player-disc"></span>
+                <span class="player-title">夜航</span>
+              </div>
+              <div class="transport">
+                <svg><use href="#icon-prev"></use></svg>
+                <span class="play-btn"><svg><use href="#icon-play"></use></svg></span>
+                <svg><use href="#icon-next"></use></svg>
+              </div>
+              <span class="player-time">0:42</span>
+            </div>
+          </div>
+          <div class="paste-hint" aria-label="支持 bilibili.com 和 b23.tv 链接">
+            <span>粘贴链接</span>
+            <div class="keys" aria-hidden="true"><kbd>bilibili.com</kbd><kbd>b23.tv</kbd></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" aria-label="ZI Player 能做什么">
+        <article class="feature">
+          <h2>支持导入单个视频和合集。</h2>
+          <div class="feature-copy">
+            <p class="feature-lead">贴一条视频，或贴一整份合集。</p>
+            <p>普通视频、多 P、合集都可以，链接用 bilibili.com 或 b23.tv。</p>
+          </div>
+        </article>
+        <article class="feature">
+          <h2>创建不同歌单。</h2>
+          <div class="feature-copy">
+            <p class="feature-lead">按想听的内容分开建。</p>
+            <p>可以搜索、改名，用网格或列表看。</p>
+          </div>
+        </article>
+        <article class="feature">
+          <h2>后台继续播放。</h2>
+          <div class="feature-copy">
+            <p class="feature-lead">关掉窗口，歌还在放。</p>
+            <p>程序留在托盘里，点图标再打开。</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="download" id="download" aria-labelledby="download-title">
+        <div>
+          <h2 id="download-title">小窗口。<br />只播声音。</h2>
+          <p>三个按钮分别下载当前最新正式版。</p>
+        </div>
+        <div class="download-actions">
+          <a class="button button-primary" data-asset="exe" href="https://github.com/awrff/zi-player/releases/latest">
+            <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+            Windows 安装包
+          </a>
+          <a class="button button-primary" data-asset="deb" href="https://github.com/awrff/zi-player/releases/latest">
+            <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+            Linux .deb
+          </a>
+          <a class="button button-primary" data-asset="appimage" href="https://github.com/awrff/zi-player/releases/latest">
+            <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+            Linux AppImage
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>ZI Player</span>
+      <nav aria-label="页脚导航">
+        <a href="../">Jayden Dev</a>
+        <a href="https://github.com/awrff/zi-player">GitHub</a>
+      </nav>
+      <span>只播音频。</span>
+    </footer>
+    <script>
+      const assetSuffix = {
+        exe: "_x64-setup.exe",
+        deb: "_amd64.deb",
+        appimage: "_amd64.AppImage",
+      };
+      fetch("https://api.github.com/repos/awrff/zi-player/releases/latest")
+        .then((res) => (res.ok ? res.json() : Promise.reject()))
+        .then((release) => {
+          const assets = release.assets || [];
+          for (const [key, suffix] of Object.entries(assetSuffix)) {
+            const asset = assets.find((item) => item.name.endsWith(suffix));
+            if (!asset) continue;
+            document.querySelectorAll(`[data-asset="${key}"]`).forEach((link) => {
+              link.href = asset.browser_download_url;
+            });
+          }
+        })
+        .catch(() => {});
+    </script>
+  </body>
+</html>
